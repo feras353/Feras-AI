@@ -2,157 +2,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feras AI Learning</title>
+  <title>Feras AI - منصة تعلم البرمجة</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to left, #1f1f2e, #2c2c3e);
-      color: #eee;
-    }header {
-  background-color: #282c34;
-  padding: 1rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #61dafb;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: #1a1a2a;
-}
-
-nav a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #61dafb;
-}
-
-section {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.card {
-  background: #333;
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.chat {
-  background: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
-
-.msg {
-  margin: 1rem 0;
-  padding: 0.8rem;
-  border-radius: 10px;
-}
-
-.user-msg {
-  background-color: #007bff;
-  color: white;
-  text-align: right;
-}
-
-.bot-msg {
-  background-color: #444;
-  color: #ddd;
-  text-align: left;
-}
-
-input[type="text"] {
-  width: 80%;
-  padding: 0.8rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-}
-
-button {
-  padding: 0.8rem 1.5rem;
-  margin-top: 1rem;
-  background-color: #61dafb;
-  color: #000;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1c1c2c;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 0 10px #000;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #2b2b3c;
+      padding: 1rem;
+    }
+    nav a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #61dafb;
+    }
+    .videos iframe {
+      width: 100%;
+      max-width: 400px;
+      height: 230px;
+      border-radius: 10px;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #61dafb;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .chat-box {
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 1rem;
+      background: #1e1e2f;
+      max-width: 600px;
+      margin: auto;
+    }
+    .chat-box p {
+      background: #333;
+      padding: 0.5rem;
+      border-radius: 8px;
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
-  <header>Feras AI Learning</header>
-  <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#lessons">دروس البرمجة</a>
-    <a href="#chat">الدردشة الذكية</a>
-  </nav>  <section id="lessons">
-    <div class="card">
-      <h2>ما هي البرمجة؟</h2>
-      <p>البرمجة هي عملية كتابة تعليمات للحاسوب باستخدام لغة يفهمها، مثل JavaScript أو Python.</p>
+  <header>🤖 Feras AI - تعلم البرمجة ودردشة ذكية</header>  <nav>
+    <a href="#learn">تعلم Java</a>
+    <a href="#gallery">صور برمجية</a>
+    <a href="#chat">شات AI</a>
+    <a href="#login">تسجيل دخول</a>
+  </nav>  <section id="learn">
+    <h2>📚 فيديوهات تعلم Java من الصفر للاحتراف</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/grEKMHGYyns" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Wgx0bA5RBjM" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/hBh_CC5y8-s" allowfullscreen></iframe>
     </div>
-    <div class="card">
-      <h2>مقدمة في HTML و CSS</h2>
-      <p>HTML تُستخدم لبناء هيكل الصفحة، وCSS تُستخدم لتجميلها.</p>
+  </section>  <section id="gallery">
+    <h2>🖼️ صور برمجية تعليمية</h2>
+    <div class="gallery">
+      <img src="https://raw.githubusercontent.com/feras353/Feras-AI/main/images/java-code-example.png" alt="مثال كود Java">
+      <img src="https://raw.githubusercontent.com/feras353/Feras-AI/main/images/java-flowchart.png" alt="مخطط تعلم Java">
     </div>
   </section>  <section id="chat">
-    <h2>الدردشة مع Feras AI 🤖</h2>
-    <div class="chat" id="chat-box">
-      <div class="msg bot-msg">مرحباً! كيف يمكنني مساعدتك؟</div>
+    <h2>💬 دردشة Feras AI</h2>
+    <div class="chat-box">
+      <p>👋 مرحباً! اكتب سؤالك وسأجيب باستخدام الذكاء الاصطناعي.</p>
+      <p>🛠️ (سيتم ربط الشات فعلياً لاحقاً عبر واجهة API أو سيرفر).</p>
     </div>
-    <input type="text" id="user-input" placeholder="اكتب سؤالك هنا...">
-    <button onclick="sendMessage()">إرسال</button>
-  </section>  <script>
-    async function sendMessage() {
-      const input = document.getElementById('user-input');
-      const msg = input.value.trim();
-      if (!msg) return;
-
-      const chatBox = document.getElementById('chat-box');
-      const userDiv = document.createElement('div');
-      userDiv.className = 'msg user-msg';
-      userDiv.textContent = msg;
-      chatBox.appendChild(userDiv);
-      input.value = '';
-
-      const botDiv = document.createElement('div');
-      botDiv.className = 'msg bot-msg';
-      botDiv.textContent = '...جارٍ التفكير';
-      chatBox.appendChild(botDiv);
-      chatBox.scrollTop = chatBox.scrollHeight;
-
-      // هذا الرابط يستخدم نموذج مجاني من Hugging Face
-      const response = await fetch('https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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'
-        },
-        body: JSON.stringify({ inputs: msg })
-      });
-
-      const data = await response.json();
-      botDiv.textContent = data.generated_text || 'حدث خطأ في الرد';
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-  </script></body>
+  </section>  <section id="login">
+    <h2>🔐 تسجيل الدخول</h2>
+    <form>
+      <input type="text" placeholder="اسم المستخدم" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">تسجيل دخول</button>
+    </form>
+  </section></body>
 </html>
